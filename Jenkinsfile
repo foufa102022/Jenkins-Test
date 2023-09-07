@@ -17,7 +17,7 @@ node {
     }
     
     stage('Build Docker Image') {
-      sh "docker -H tcp://192.168.1.4:2375 build -t devopsexample:${env.BUILD_NUMBER} ."
+      sh "docker -H tcp://172.19.56.101:2375 build -t devopsexample:${env.BUILD_NUMBER} ."
     }
     
     stage('Deploy Docker Image'){
