@@ -1,7 +1,7 @@
 node {
-   // def mvnHome = tool 'maven-3.9.4'
-    //def dockerImage
-    //def dockerImageTag = "devopsexample${env.BUILD_NUMBER}"
+   def mvnHome = tool 'maven-3.9.4'
+   def dockerImage
+    def dockerImageTag = "devopsexample${env.BUILD_NUMBER}"
     
     stage('Clone Repo') {
       git 'https://github.com/wahidh007/Jenkins-Test.git'
